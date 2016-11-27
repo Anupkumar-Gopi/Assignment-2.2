@@ -1,0 +1,52 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+<title>Session 2: Assignment 2.2 | Forms</title>
+</head>
+<body>
+	<div style="width:400px;border-top:30px solid #000000;padding-top:10px">
+	<form name="login" action="" method="post">	
+		<fieldset>
+			<legend>Your Details:</legend>
+			<div>
+				<label for="fullName">Name:</label>
+				<input type="text" name="fullName" id="fullName" size="30" maxlength="100"/>
+			</div>
+			<div>
+			<label for="emailId">Email:</label>
+			<input type="text" name="emailId" id="emailId" size="30" maxlength="100"/>
+			</div>
+		</fieldset>
+		<br/>
+		<fieldset>
+			<legend>Your Review:</legend>
+			<div>
+				<label for="adMode">How did you hear about us?</label>
+				<select id="adMode" name="adMode">
+					<option value="1">Google</option>
+					<option value="2">Friends</option>
+					<option value="3">Media</option>					
+				</select>
+			</div><br/>
+			<div>
+			<label>Would you visit again?</label><br/>
+			<input type="radio" name="intrEst" id="intrY" value="1"><label for="intrY">Yes</label>
+			<input type="radio" name="intrEst" id="intrN" value="2"><label for="intrN">No</label>
+			<input type="radio" name="intrEst" id="intrO" value="3"><label for="intrO">Maybe</label>
+			</div><br/>
+			<div>
+			<label for="comment">Comments:</label>
+			<textarea name="comment" id="comment" cols="48" rows="5"></textarea>
+			</div><br/>
+			<div>
+			<label for="subscrb">
+				<input type="checkbox" name="subscrb" id="subscrb"/>Sign me up for email updates</label>
+			</div>
+			<div>
+				<input type="submit" value="Submit Review"/>
+			</div>	
+		</fieldset>		
+	</form>
+	</div>
+</body>
+</html>
